@@ -1,13 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" " http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd ">
-<html xmlns=" http://www.w3.org/1999/xhtml ">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Request json test</title> 
-<script src="http://code.jquery.com/jquery-1.5.js"></script>
-<script src="json-jquery.js" type="text/javascript"></script> 
-</head>
-<body>
-<a href="#" id="getdata-button">Get JSON Data</a>
-<div id="showdata"></div>
-</body>
-</html> 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>JSON Example With Ajax</title>
+    <style>
+      body{
+	      text-align: center;
+	      font-family: arial;
+      }
+      .button{
+        margin:20px;
+        font-size:16px;
+        font-weight: bold;
+        padding:5px 10px;
+      }
+    </style>
+	</head>
+	<body>
+		<a href="http://www.reneinla.com/data.json" target="_blank">Open Json File</a>
+		<br />
+		<input type="button" value="get some JSON and parse that shit" class="button" />
+		<br />
+		<div id="here"></div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://www.reneinla.com/js/json-jquery.js"></script>
+		
+	</body>
+</html>
