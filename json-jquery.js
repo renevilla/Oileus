@@ -25,9 +25,14 @@ $(document).ready(function() {
 					//lets display a few items
 					//$('#here').html("my Name: " + json.quote);
 					//alert(json.quote);
+					//Behavior: this setInterval rotates through the objects of the json data
+					//every 2 secs. if we put the setInterval inside the .each function it will 
+					//show the alert every 2 seconds?
+					setInterval(function() {
 					$.each(json, function(idx, obj) {
 						alert(obj.tagName);
 					});
+				}, 2000);
 				}
 			});
 		//});
